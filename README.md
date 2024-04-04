@@ -7,7 +7,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
         - iso 다운로드 후 설치 추천
         - SQL Server에 대한 Azure 확장 비활성화 후 진행
 
-        ![기능선택](https://github.com/MsgIsJmt/basic-database-2024/main/images/db001.png)
+        ![기능선택](https://raw.githubusercontent.com/MsgIsJmt/basic-database-2024/main/images/db001.png)
 
         - 데이터베이스 엔진 구성부터 중요
             - Windows인증모드로 하면 외부에서 접근 불가
@@ -31,7 +31,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
 - SQL 기본 학습
     - SSMS 실행
 
-    ![SSMS로그인](https://github.com/MsgIsJmt/basic-database-2024/main/images/db002.png)
+    ![SSMS로그인](https://raw.githubusercontent.com/MsgIsJmt/basic-database-2024/main/images/db002.png)
 
     - 특이사항 - SSMS 쿼리창에서 소스코드 작성시 빨간색 오류 밑줄이 가끔 표현(전부 오류는 아님!)
 
@@ -91,7 +91,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
             - INNER JOIN(내부조인)
             - LEFT|RIGHT OUTER JOIN(외부조인) - 어느 테이블이 기준인지에 따라서 결과가 상이함
 
-    ![외부조인](https://github.com/MsgIsJmt/basic-database-2024/main/images/db004.png)
+    ![외부조인](https://raw.githubusercontent.com/MsgIsJmt/basic-database-2024/main/images/db004.png)
 
 ## 3일차
 - Database 학습
@@ -271,7 +271,7 @@ IoT 개발자과정 SQLServer 학습 리포지토리
             6. 127.0.0.1로 된 주소 > **사용 > 예**, 로 변경
             7. 적용 후 SQL Server 서비스 > SQL Server(MSSQLSERVER) 더블 클릭 후, **다시 시작** 버튼 클릭, 재시작 필요
 
-            ![구성관리자](https://github.com/MsgIsJmt/basic-database-2024/main/images/db005.png)
+            ![구성관리자](https://raw.githubusercontent.com/MsgIsJmt/basic-database-2024/main/images/db005.png)
 
 ## 6일차 (24.04.04)
 - 파이썬 SQL Server 연동 프로그래밍
@@ -282,6 +282,11 @@ IoT 개발자과정 SQLServer 학습 리포지토리
         1. DB 테이블의 varchar(ASCII) -> nvarchar(UTF-8) 변경
         2. Python에서 pymssql로 접속할 때, Charset을 'UTF8'로 설정
         3. INSERT 쿼리에 한글 입력되는 컬럼은 N''을 붙여줌(유니코드로 입력하라는 뜻)
+
+    - 실행화면
+ 
+        https://github.com/MsgIsJmt/basic-database-2024/assets/158007442/bcd4c034-2771-4523-8058-c4773d28d3bb
+
 
 - 데이터베이스 모델링
 
