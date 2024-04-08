@@ -20,3 +20,20 @@ CREATE TABLE Inventory(
 	regdate DATETIME DEFAULT GETDATE()
 );
 GO
+
+-- 1만건 더미데이터 생성
+DECLARE @i INT;
+SET @i = 0;
+
+WHILE (@i < 10000)
+BEGIN
+	SET @i = @i + 1;
+	INSERT INTO Users (username, guildno, regdate)
+	VALUES (CONCAT('user', @i), @i/100, DATEADD(dd, -@i/100, GETDATE()))
+END;
+
+SELECT *
+	FROM Users;
+
+-- 완전히 삭제
+TRUNCATE TABLE Users; -- 1부터 초기화
